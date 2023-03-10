@@ -18,7 +18,6 @@ function FirstBox() {
 
     
 
-    const [isActive,setIsactive]=useState(false)
 
     function handleSubmit(e)
     {
@@ -68,7 +67,7 @@ function FirstBox() {
         <section className="sec-1">
             <div className="container">
                 <div className="row align-items-center justify-content-center" style={{height:'100vh'}}>
-                    <div className="col-md-6 p-3 shadow bg-light">
+                    <div className="col-md-6 p-3 form-box">
                     <ul class="nav nav-pills nav-fill mb-3">
   <li class="nav-item">
     <a class="nav-link active" ref={link1} data-bs-toggle='tab'  aria-current="page" href="#home">1</a>
@@ -91,11 +90,11 @@ function FirstBox() {
             <label for="" className="form-label">Name</label>
             <input type="text" className="form-control" onChange={e=>{setName(e.target.value)}} />
             <label for="" className="form-label">Address</label>
-            <input type="text" className="form-control" onChange={e=>{setAddress(e.target.value)}}/>
+            <input type="email" className="form-control" onChange={e=>{setAddress(e.target.value)}}/>
             <label for="" className="form-label">Email</label>
             <input type="text" className="form-control" onChange={e=>{setEmail(e.target.value)}}/>
             <div className="d-flex justify-content-end my-3" >
-            <a type="button" className="btn btn-primary"  onClick={handleSecond}>Next</a>
+            <button type="button" className="btn btn-primary"  onClick={handleSecond}>Next</button>
 
             </div>
         </form>
@@ -118,17 +117,22 @@ function FirstBox() {
   <div class="tab-pane fade" id="contact" ref={tab3} role="tabpanel" aria-labelledby="contact-tab">
   <form action="" onSubmit={e=>handleSubmit(e)}>
             <label for="" className="form-label">Name</label>
-            <input type="text" className="form-control" value={name} />
+            <h3>{name}</h3>
             <label for="" className="form-label">Address</label>
-            <input type="text" className="form-control" value={address}/>
+            <h3>{address}</h3>
+
             <label for="" className="form-label">Email</label>
-            <input type="text" className="form-control" value={email}/>
+            <h3>{email}</h3>
+
             <label for="" className="form-label">Age</label>
-            <input type="text" className="form-control" value={age}/>
+            <h3>{age}</h3>
+
             <label for="" className="form-label">Phone</label>
-            <input type="text" className="form-control" value={phone}/>
+            <h3>{phone}</h3>
+
             <label for="" className="form-label">Profession</label>
-            <input type="text" className="form-control" value={profession}/>
+            <h3>{profession}</h3>
+
 
             <div className="d-flex justify-content-end my-3" >
             <button type="button" className="btn btn-primary me-2"  onClick={handleSecond2}>Previous</button>

@@ -1,17 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
+  
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+label{
+  font-size: .9rem !important;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: rgb(58, 58, 58);
+  text-transform: uppercase;
+  display: block;
+}
+
+.form-box{
+  box-shadow: 0rem 0rem .2rem .2rem rgb(220, 220, 220);
+  border-radius: .3rem;
+  /* border: 1px solid rgb(233, 233, 233); */
 }
 
 .sec-1{
   height: 100vh;
+}
+h3{
+  font-size: 1rem;
+  font-size: .8rem;
+  color: rgb(0, 81, 56);
+}
+
+.nav-link.active
+{
+  background-color: rgb(0, 121, 83) !important;
+}
+
+button{
+  background-color: rgb(0, 121, 83) !important;
+  margin-top: .9rem;
+
+}
+
+
+.nav-link{
+  color: rgb(0, 81, 56);
+
+}
+input{
+  font-size: .85rem !important;
 }
